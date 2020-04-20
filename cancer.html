@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset=utf-8 />
+	<title>Cancer Death Rates Across US Counties, 2009-2013</title>
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background: #f5f5f5;
+			font-family: 'Open Sans', sans-serif;
+			color: #3d3d3d;
+		}
+
+		section {
+			/* width: 960px; */
+			width: 80%;
+			margin: 20px auto;
+		}
+
+		h1 {
+			font-family: 'Open Sans', sans-serif;
+			font-weight: bold;
+			letter-spacing: .04em;
+		}
+
+		h2 {
+			font-family: 'Open Sans', sans-serif;
+			letter-spacing: .04em;
+		}
+
+		p {
+			font-size: 1em;
+			line-height: 2.0em;
+		}
+
+		a {
+			color: #005daa;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		ul {
+			padding-left: 20px;
+		}
+
+		li {
+			margin: 10px 0
+		}
+
+		#map {
+			width: 100%;
+			margin: 0px auto;
+			/* border: 2px solid #d3d3d3; */
+		}
+
+		/* add custom style class here */
+	</style>
+</head>
+
+<body>
+	<div id='map'>
+		<!-- Add your custom iframe here -->
+		<iframe width="100%" height="520" frameborder="0" src="https://nmp.carto.com/u/de-vuesualizer/builder/fda8644d-9fac-47ec-82fa-515b537799c6/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+	</div>
+	<section>
+		<a href="https://nmp.carto.com/u/de-vuesualizer/builder/fda8644d-9fac-47ec-82fa-515b537799c6/embed">Enlarge map</a>
+
+		<!-- This is an HTML comment. Find the comments below and follow the instructions. -->
+
+		<h1>Cancer Death Rates Across US Counties, 2009-2013</h1>
+
+		<!-- Add you information below -->
+		<h2>Authored by Vu Nguyen</h2>
+		<p><i>The Cancer Death Rates by County 2009-2013</i> map was built under contract with specific requirements by <a href="http://www.cancer.gov">The National Cancer Institute</a>. With this map, it is hope that it will raise awareness of the extent of cancer deaths in the United States.
+			The map is a web interactive choropleth map type using a 7 class quantile classification method.  It was constructed completely using CARTO map. The purple color is symbolic of the color of cancer. 
+			The map has been projected to an equal area CRS - EPSG:2163 <i>(US National Atlas Equal Area)</i>. The map requirements are listed below:
+		<br>
+		<ul>
+			<li>Illustrated the distribution of cancer rates averaged over a 5-year period by US county.</li>
+			<li>Featured a window pop-up allowing the user to derive the name of the county, the state name, the death rate, and trend upon clicking a county.</li>
+			<li>Included a user-friendly legend</li>
+			<li>Overlaid state boundar</li>
+			<li>Map and layered metadata</li>
+			<li>Link to full-screen version provided</li>
+		</ul>
+		</p>
+		<h3>Data source and method</h3>
+		<p>Data were downloaded from the National Cancer Institute’s State Cancer Profiles website (<a href="http://www.statecancerprofiles.cancer.gov/">statecancerprofiles.cancer.gov</a>) on 11/27/2016. The data describe cancer rates for all cancer sites by mortality, for
+			all races, sexes, and ages, averaged over the years of 2009 - 2013. Rates are the number of deaths per 100,000 people.</p>
+		<p>All data processing were performed using Carto datasets and maps capabilities - exploiting the power of SQL capabilities in Carto to perform layer join, styling, symbology, and CRS reprojection. See SQL <a href="../sql">here</a>
+		<ul>
+			<!-- Change the following contacts to your personal brand, whatever you want it to be! -->
+
+			<li>Follow me on twitter <a href="https://twitter.com/NewMapsPlus">@TheRightVue</a></li>
+			<li>Visit my Github account <a href="https://github.com/newmapsplus">New Map Plus Gallery</a></li>
+			<li>Visit New Maps Plus Mapping Portfolio <a href='https://newmapsplus.uky.edu/explore-new-maps'>mapping portfolio</a>.</li>	
+		</ul>
+	</section>
+</body>
+</html>

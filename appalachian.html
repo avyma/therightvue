@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset=utf-8 />
+	<title>Appalachian Trail of the Northeastern states USA</title>
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background: white;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 400;
+			color: rgb(10, 10, 10);
+		}
+
+		section {
+			/* width: 960px; */
+			width: 80%;
+			margin: 20px auto;
+		}
+
+		h1 {
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 300;
+			font-size: 1.5em;
+			font-weight: bold;
+			color: black;
+			/* The em unit. 3x the current size */
+			letter-spacing: .04em;
+			text-transform: uppercase;
+		}
+
+		h2 {
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 700;
+			color: rgb(10, 10, 10);
+			font-size: 1.25em;
+			letter-spacing: .04em;
+		}
+
+		p {
+			font-size: 1em;
+			line-height: 1.5em;
+		}
+
+		a {
+			color: #2a32a5;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		ul {
+			padding-left: 20px;
+		}
+
+		li {
+			margin: 10px 0
+		}
+
+		#map {
+			width: 100%;
+			margin: 10px auto;
+			< !-- border: 2px solid #d3d3d3;
+			-->
+		}
+
+		/* add custom style class here */
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: Verdana, sans-serif;
+		}
+
+		.mySlides {
+			display: none;
+		}
+
+		img {
+			vertical-align: middle;
+		}
+
+		/* Slideshow container */
+		.slideshow-container {
+			max-width: 1000px;
+			position: relative;
+			margin: auto;
+		}
+
+		/* Hide the images by default */
+		.mySlides {
+			display: none;
+		}
+
+		/* Next & previous buttons */
+		.prev,
+		.next {
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			width: auto;
+			margin-top: -22px;
+			padding: 16px;
+			color: white;
+			font-weight: bold;
+			font-size: 18px;
+			transition: 0.6s ease;
+			border-radius: 0 3px 3px 0;
+			user-select: none;
+		}
+
+		/* Position the "next button" to the right */
+		.next {
+			right: 0;
+			border-radius: 3px 0 0 3px;
+		}
+
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover,
+		.next:hover {
+			background-color: rgba(0, 0, 0, 0.8);
+		}
+
+		/* Caption text */
+		.text {
+			color: #f2f2f2;
+			font-size: 15px;
+			padding: 8px 12px;
+			position: absolute;
+			bottom: 8px;
+			width: 100%;
+			text-align: center;
+		}
+
+		/* Number text (1/3 etc) */
+		.numbertext {
+			color: #f2f2f2;
+			font-size: 12px;
+			padding: 8px 12px;
+			position: absolute;
+			top: 0;
+		}
+
+		/* The dots/bullets/indicators */
+		.dot {
+			cursor: pointer;
+			height: 15px;
+			width: 15px;
+			margin: 0 2px;
+			background-color: #bbb;
+			border-radius: 50%;
+			display: inline-block;
+			transition: background-color 0.6s ease;
+		}
+
+		.active,
+		.dot:hover {
+			background-color: #717171;
+		}
+
+		/* Fading animation */
+		.fade {
+			-webkit-animation-name: fade;
+			-webkit-animation-duration: 1.5s;
+			animation-name: fade;
+			animation-duration: 1.5s;
+		}
+
+		@-webkit-keyframes fade {
+			from {
+				opacity: .4
+			}
+
+			to {
+				opacity: 1
+			}
+		}
+
+		@keyframes fade {
+			from {
+				opacity: .4
+			}
+
+			to {
+				opacity: 1
+			}
+		}
+	</style>
+
+
+</head>
+
+<body>
+
+	<section>
+
+		<!-- This is an HTML comment. Find the comments below and follow the instructions. -->
+
+		<h1>APPALACHIAN TRAIL ON VINTAGE MAP BY ERWIN RAISZ</h1>
+
+		<div id='map'>
+			<!-- Add your custom HTML here -->
+			<!-- <center><img src="../graphics/appalachian_1200px.jpg" alt="Appalachian Trail of North Eastern States" class="max-image-width"></center> -->
+
+		</div>
+		<a href="images/appalachian_8Kpx.png">Link to High-Resolution Map</a>
+		<br>
+		<!--Line Break Tag -->
+		<br>
+		<!--Line Break Tag -->
+
+		<!-- Building a Carousel-->
+		<!-- Slideshow container -->
+		<div class="slideshow-container">
+
+			<!-- Full-width images with number and caption text -->
+
+			<div class="mySlides fade">
+				<div class="numbertext">1 / 4</div>
+				<img src="images//appalachian_1200px.jpg" style="width:100%">
+				<div class="text">Appalachian Trail NE USA</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">2 / 4</div>
+				<img src="images/new_york_1.jpg" style="width:100%">
+				<div class="text">New York Trail</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">3 / 4</div>
+				<img src="images/new_york_2.jpg" style="width:100%">
+				<div class="text">Scenic New York</div>
+			</div>
+
+
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+
+		<!-- The dots/circles -->
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+
+		<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			// Next/previous controls
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+			}
+
+			// Thumbnail image controls
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {
+					slideIndex = 1
+				}
+				if (n < 1) {
+					slideIndex = slides.length
+				}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex - 1].style.display = "block";
+				dots[slideIndex - 1].className += " active";
+			}
+		</script>
+
+		<!-- End Carousel -->
+
+
+
+
+
+
+
+
+		<!-- Add you information below -->
+		<h2>Authored by: Vu Nguyen @ New Maps Plus</h2>
+		<br>
+		<!--Line Break Tag -->
+
+		<p>This commemorative map was created for the Craggy Cartographers - a hiking club for old mappers. Under
+			special permission, a vintage <a href='https://www.raiszmaps.com'>Erwin Raisz map</a> was used as a based
+			map.
+			The map was georeferenced using QGIS 3.10 GDAL Georeferencer. In addition, selective rivers, lakeswater and
+			mountains were digitized with available attributes information. The Coordinate Reference System (CRS) is
+			North America Albers Equal Area Conic (EPSG:102008)
+		</p>
+		The source of the data are as follows:
+		<ul>
+			<li>Raisz_Landforms1957.tif (Copyright <a href='https://www.raiszmaps.com'>Erwin Raisz</a>) - not for
+				distribution</li>
+			<li>Appalachian Trail.shp: <a
+					href='http://www.appalachiantrail.org/home/explore-the-trail/gis-data'>Appalachian Trail
+					Conservancy</a> </li>
+			<li>ne_10m_graticules_1.shp: <a href='http://www.naturalearthdata.com'> Natural Earth dataset</a></li>
+			<li>ne_50m_admin_1_states_provinces_lakes: <a
+					href='https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-1-states-provinces/'>
+					Admin 1 - States, Provinces</a></li>
+		</ul>
+		<p> Included in the presentation in this webpage are some of the most scenic photographs of Appalachian Trail
+			stretching across the Norteastern states region of Pensylvania, New York, Connecticut, Massachusetts and
+			Vermont. An HTML carousel is designed for this purpose.</p>
+		<ul>
+			<!-- Change the following contacts to your personal brand, whatever you want it to be! -->
+			<li>See my projects on GitHub: <a href="https://github.com/newmapsplus/map671-module-04-avyma">New Maps Plus
+					AVYMA</a></li>
+			<li>Follow me on twitter: <a href="https://twitter.com/NewMapsPlus">@TheRightVue</a></li>
+			<li>Visit New Maps Plus Mapping Portfolio <a href='https://newmapsplus.uky.edu/explore-new-maps'>mapping
+					portfolio</a>.</li>
+		</ul>
+	</section>
+
+</body>
+
+</html>
