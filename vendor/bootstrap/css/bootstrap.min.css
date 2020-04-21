@@ -7888,12 +7888,15 @@ button.bg-dark:focus {
     border-color: #fff !important
 }
 
+/* Hey, where did you get this template? 
+These values have been changed from the default Bootstrap CSS. */
+
 .rounded-sm {
-    border-radius: 0px !important
+    border-radius: .2rem !important
 }
 
 .rounded {
-    border-radius: 0px !important
+    border-radius: 0.3rem !important
 }
 
 .rounded-top {
