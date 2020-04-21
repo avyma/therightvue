@@ -7,6 +7,7 @@
 body {
   /* apply custom rules to the body here */
   font-family: Lato;
+  letter-spacing: 0.1rem; /* apply global spacing here, or chose your element below */
 }
 
 /* h4 {
