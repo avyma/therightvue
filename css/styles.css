@@ -7,6 +7,7 @@
 body {
   /* apply custom rules to the body here */
   font-family: Lato;
+  letter-spacing: 0.1rem; /* apply global spacing here, or chose your element below */
 }
 
 /* h4 {
@@ -41,4 +42,8 @@ section {
   letter-spacing: 1rem;
   /*background: rgba(255, 255, 255, 0.4);*/
   text-shadow: 3px 3px rgba(65, 64, 64, 0.7);
+}
+
+.V {
+  color: orangered;
 }
