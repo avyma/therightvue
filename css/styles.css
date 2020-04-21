@@ -42,3 +42,7 @@ section {
   /*background: rgba(255, 255, 255, 0.4);*/
   text-shadow: 3px 3px rgba(65, 64, 64, 0.7);
 }
+
+.V {
+  color: orangered;
+}
