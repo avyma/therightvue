@@ -1,0 +1,498 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Health Kentucky</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS from CDN -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- Google web font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel=" stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel=" stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <header class="row bg-dark">
+            <div class="col-sm-9 px-3 py-sm-3 text-white">
+                <h2>CHRONIC CONDITIONS - KENTUCKY (2010 - 2017)</h2>
+            </div>
+            <div class="col-sm-3 px-3 py-sm-3">
+                <svg height="1" width="1" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                        <pattern id="diagonal-stripe-1" patternUnits="userSpaceOnUse" width="10" height="10">
+                            <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPSd3aGl0ZScvPgogIDxwYXRoIGQ9J00tMSwxIGwyLC0yCiAgICAgICAgICAgTTAsMTAgbDEwLC0xMAogICAgICAgICAgIE05LDExIGwyLC0yJyBzdHJva2U9J2JsYWNrJyBzdHJva2Utd2lkdGg9JzEnLz4KPC9zdmc+Cg==" x="0" y="0" width="10" height="10"> </image>
+                        </pattern>
+                    </defs>
+                </svg>
+            </div>
+        </header>
+
+        <div class="row-12 bg-dark"></div>
+
+        <!--Dropdown items: All chronic conditions begins-->
+        <div class="nav nav-item dropdown">
+            <a class="nav-link nav-item dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown button
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#AB" id="AB_PREV"> Alcohol Abuse</a>
+                <a class="dropdown-item" href="#AB" id="AF_PREV">Atrial Fibrillation</a>
+                <a class="dropdown-item" href="#AB" id="ALZ_PREV">Alzheimer/Dementia</a>
+                <a class="dropdown-item" href="#AB" id="ART_PREV">Arthritis</a>
+                <a class="dropdown-item" href="#AB" id="AST_PREV">Asthma</a>
+                <a class="dropdown-item" href="#AB" id="AUT_PREV">Autism</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#AB" id="CAN_PREV">Cancer</a>
+                <a class="dropdown-item" href="#AB" id="CHRONKID_PREV">Chronic Kidney</a>
+                <a class="dropdown-item" href="#AB" id="COPD_PREV">COPD</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#AB" id="DEPR_PREV">Depression</a>
+                <a class="dropdown-item" href="#AB" id="DIA_PREV">Diabetes</a>
+                <a class="dropdown-item" href="#AB" id="DRG_PREV">Drug Abuse</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#AB" id="HEP_PREV">Hepatitis(B&C)</a>
+                <a class="dropdown-item" href="#AB" id="HF_PREV">Heart Failure</a>
+                <a class="dropdown-item" href="#AB" id="HIV_PREV">HIV/AIDS</a>
+                <a class="dropdown-item" href="#AB" id="HLIP_PREV">Hyperlipidemia</a>
+                <a class="dropdown-item" href="#AB" id="HTN_PREV">Hypertension</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#AB" id="IHD_PREV">Ischemic Heart Disease</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#AB" id="OSTEO_PREV">Osteoporosis</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#AB" id="SCHIZ_PREV">Schizophrenia/Psychotic Disorder</a>
+                <a class="dropdown-item" href="#AB" id="STRK_PREV">Stroke</a>
+
+            </div>
+
+        </div>
+        <!-- <div class="dropdown">
+            
+          </div> -->
+
+        <div class="" id="AB">
+            <section class="row bg-dark">
+                <div class="col-12 col-md-8 col-lg-9 px-0">
+
+                    <!-- Map drawn here: Map is map (like a single canvas). Just happens that it is drawn with AF tab selected. Other maps can be drawn here -->
+                    <div id="ABmap" class="bg-light position-relative">
+
+                        <div class="col my-2" id="ui-controls">
+
+                            <!-- HTML slider INPUT see here: https://developer.mozilla.org/en-US/docs/Learn/Forms/Basic_native_form_controls -->
+                            <!-- Also see here: <!-- HTML slider INPUT see here: https://developer.mozilla.org/en-US/docs/Learn/Forms/Basic_native_form_controls -->
+                            <!-- <label> -->
+                            <!-- <span class="min">2010</span><span class="max">2017</span> -->
+                            <input id="slider" type="range" min="2010" max="2017" value="2010" step="1" />
+                            <!-- </label> -->
+                            <h6 id="yearTitle" class="ml-5 text-primary">2010</h6>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <aside id="about" class="col-12 col-md-4 bg-secondary col-lg-3">
+
+                    <ul class="nav nav-tabs pt-sm-3">
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#writeup">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#analysis">Analysis</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#graph">Graph</a>
+                        </li>
+
+                    </ul>
+
+
+                    <div id="myTabContent" class="tab-content">
+                        <!-- <div class="tab-pane fade show active" id="analysis"></div> -->
+
+                        <div class="tab-pane fade text-dark" id="writeup">
+
+                            <div class="data-title row text-white pl-sm-3 pt-sm-4">
+                                <h3>Overview</h3>
+                            </div>
+
+                            <div class="scroll pt-4 px-sm-2" id="scroll-analysis">
+                                <h5 style="color:rgb(228, 163, 43)" ;>The Map</h5>
+                                <p>This map is a modest attempt to provide a cross-sectional overview of the prevalence
+                                    and
+                                    expenditure per capita of 21 common chronic conditions across the counties of
+                                    Kentucky. Key features include an Analysis tab panel that presents additional
+                                    information
+                                    on the expenditure per capita per county per chronic conditions as well as the the
+                                    Social Vulnerability Index 2018 (SVI) for each respective county. A bar graph depicting the selected chronic condition (dropdown) between 2010-2017 for the county selected (Tooltip).</p>
+                                <h5 style="color:rgb(228, 163, 43)" ;>Chronic Conditions</h5>
+                                <p>Originally intended to visualize only heart-related chronic conditions, the project
+                                    has
+                                    evolved to favor a wider visualization spectrum to instill and stimulate honest
+                                    appreciation and understanding of the relationship between health and the
+                                    socioeconomic conditions unique to each counties of Kentucky. Personally, in the
+                                    process of making this map, it is difficult to escape lingering thoughts “What are
+                                    the probability of becoming part of the statistics?" In Kentucky and elsewhere in
+                                    our nation, the health status is equally bleak.
+                                </p>
+                                <h5 style="color:rgb(228, 163, 43)" ;>Social Vulnerability Index</h5>
+                                <p>Before addressing “The Social Vulnerability
+                                    Index”, it is helpful to glance at the <a href="https://www.cdc.gov/socialdeterminants/index.htm">Social Determinants of
+                                        Health (SDOH)</a>. Conceived by the CDC, it is a relatively new concept stating
+                                    that "conditions in the places where people live, learn, work, and
+                                    play
+                                    affect a range of health risks and outcomes". Indeed, there is growing evidence to
+                                    suggest that social
+                                    determinants such as unstable housing, low income, unsafe neighborhoods, or
+                                    substandard
+                                    education will have a negative impact on health. SODH is important to improve
+                                    population
+                                    health and foster health equity.</p>
+                                <p>As our country is grappling with runaway healthcare costs, the SODH may present a
+                                    rare opportunity for a substantial paradigm shift from traditional treatment-first to prevention-first
+                                    philosophy. It may present invaluable opportunity for policymakers and healthcare
+                                    professionals to rethink the different ways and means to distribute valuable health
+                                    resources. For the citizenry, understanding SODH can nurture the growth of an
+                                    inclusive grassroots activism toward a cleaner, healthier and equitable living
+                                    conditions.</p>
+                                <p><a href="https://svi.cdc.gov">The Social Vulnerability Index</a> can be described as
+                                    a
+                                    scorecard to measure the level of community's resilience when confronted by external
+                                    stresses on human health including stresses
+                                    from natural and human-caused disasters or disease outbreaks. Lowering social
+                                    vulnerability can decrease both human suffering and economic loss.</p>
+                                <p>In this map we included 4 themes described in the SVI: 1) Socioeconomic; 2) Household
+                                    Composition &
+                                    Disability;
+                                    3) Minority Status & Language; 4) Housing Type & Transportation. A summary ranking
+                                    therme was
+                                    also included in the analysis. <a href="https://svi.cdc.gov/Documents/Data/2018_SVI_Data/SVI2018Documentation.pdf">SVI
+                                        Documentation</a>
+                                </p>
+
+                                <h5 style="color:rgb(228, 163, 43)" ;>Applications</h5>
+                                <p> In the Analysis tab, a dashboard-inspired panel is used to display key indicators: 1)
+                                    prevalence (County, Kentucky Average, and US Average); 2) SVI themes; and 3)
+                                    expenditure per capita. The tooltip on the map also provides indicators. However, it
+                                    is limited in the display of those related to prevalence. It is intended that the
+                                    map when used in combination with the Analysis panel can provide a useful high-level
+                                    view of the extent of the specific chronic conditions by counties and its
+                                    relationships to key SVI theme indicators and expense per capita. For instance,
+                                    several inferences can be derived on the characteristics of health expenses in, say,
+                                    less affluent counties of Eastern Kentucky versus a more urbanized counties like
+                                    Jefferson and Fayette. Furthermore, inferences can be made on the level of
+                                    prevalence of specific types of chronic conditions and its comparative costs based
+                                    on the level of income and urbanization.</p>
+
+                                <p>In sum, this analysis should provide useful overview for medical researchers and
+                                    policymakers in the area of grant applications with regards to formulating programs
+                                    to target the right resources to address the chronic conditions that exists in the
+                                    counties.</p>
+
+                                <h5 style="color:rgb(228, 163, 43)" ;>Key Improvements</h5>
+
+                                <p>Improvements will significantly depens on continuing development and acquisition of
+                                    technical and design skills and experience. Deployment of the right tools for the
+                                    intended purpose of the project is critical.</p>
+
+                                <p>However, many important lessons learned:</p>
+                                <ul>
+                                    <li>Data: SQL and database related skills are primary skills when work involved
+                                        large datasets. Continued understanding of the use of CSV format data in
+                                        geospatial
+                                        analysis could lessen the burden of data wrangling.</li>
+                                    <li>Work Breakdown Structure: Tasks breakdown and resource estimate with a strong
+                                        project
+                                        management approach is critical for planning as well as renumeration purposes.
+                                    </li>
+                                    <br>
+                                    <p>This map was conceived from the perspective of a designer not a software
+                                        developer. The best UI to visualize the data would be to deploy the swipe
+                                        capability between two maps capability. One map should show the vulnerability
+                                        index and the other the chronic conditions and/or expenditure per capita per
+                                        county.
+                                    </p>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade show active" id="analysis">
+                            <!-- <div class="container-fluid" id="prev"> -->
+
+
+                            <!-- Add scrollable container -->
+                            <!-- <div class="ex1"> -->
+                            <div class="data-title row text-white pl-sm-3 pt-sm-4">
+                                <h3 id="chron_name"></h3>
+                            </div>
+
+                            <div id="scroll-analysis">
+
+                                <div class="row px-sm-3">
+                                    <div class="card bg-dark px-1 py-1" style="width: 100%; height: 12rem">
+                                        <div class="card-header pt-1 px-2">Prevalence (%)</div>
+                                        <div class="dataBox row px-sm-2">
+
+
+                                            <div class="col-lg-4 col-sm-6 py-sm-3">
+                                                <div class="card text-white shadow" style="height: 7rem;">
+                                                    <!-- <div class="card-header">Header</div> -->
+                                                    <div class="card-body my-sm-auto mx-sm-auto">
+                                                        <h1 class="card-title display-5" id="prev_info"></h1>
+                                                        <!-- <p class="card-text"></p> -->
+                                                    </div>
+                                                    <div class="card-footer" style="height: 2rem;">
+                                                        <h6 style="font-size: small;" id="county_label"></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-lg-4 col-sm-6 py-sm-3">
+                                                <div class="card text-white shadow" style="height: 7rem;">
+                                                    <!-- <div class="card-header">Header</div> -->
+                                                    <div class="card-body my-sm-auto mx-sm-auto">
+                                                        <h1 class="card-title display-5" id="ky_avg"></h1>
+                                                        <!-- <p class="card-text"></p> -->
+                                                    </div>
+                                                    <div class="card-footer" style="height: 2rem;">
+                                                        <h6 style="font-size: small;" id="ky_label"></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-sm-6 py-sm-3">
+                                                <div class="card text-white shadow" style="height: 7rem;">
+                                                    <!-- <div class="card-header">Header</div> -->
+                                                    <div class="card-body my-sm-auto mx-sm-auto">
+                                                        <h1 class="card-title display-5" id="us_avg"></h1>
+                                                        <!-- <p class="card-text"></p> -->
+                                                    </div>
+                                                    <div class="card-footer" style="height: 2rem;">
+                                                        <h6 style="font-size: small;" id="us_label"></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div style="height: 1rem"></div>
+
+                                <div class="row px-sm-3">
+                                    <div class="card bg-dark px-1 py-1" style="width: 100%; height: 23rem">
+                                        <div class="card-header pt-1 px-2">
+                                            <span>Social Vulnerability Index:</span>
+                                            <span id="svi_header"></span>
+                                        </div>
+                                        <div class="dataBox row px-sm-2">
+
+                                            <div class="col-lg-4 col-sm-6 py-sm-3">
+                                                <div class="card text-white shadow" style="height: 8rem;">
+                                                    <!-- <div class="card-header">Header</div> -->
+                                                    <div class="card-body my-sm-auto mx-sm-auto">
+                                                        <h3 class="card-title pt-2" id="social"></h3>
+                                                        <!-- <p class="card-text"></p> -->
+                                                    </div>
+                                                    <div class="card-footer pt-1" style="height: 3rem;">
+                                                        <h6><small>Socio-economic</small></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-sm-6 py-sm-3">
+                                                <div class="card text-white shadow" style="height: 8rem;">
+                                                    <!-- <div class="card-header">Header</div> -->
+                                                    <div class="card-body my-sm-auto mx-sm-auto">
+                                                        <h3 class="card-title pt-2" id="household"></h3>
+                                                        <!-- <p class="card-text"></p> -->
+                                                    </div>
+                                                    <div class="card-footer pt-1" style="height: 3rem;">
+                                                        <h6><small>Household & Disability</small></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-sm-6 py-sm-3">
+                                                <div class="card text-white shadow" style="height: 8rem;">
+                                                    <!-- <div class="card-header">Header</div> -->
+                                                    <div class="card-body my-sm-auto mx-sm-auto">
+                                                        <h3 class="card-title pt-2" id="minority"></h3>
+                                                        <!-- <p class="card-text"></p> -->
+                                                    </div>
+                                                    <div class="card-footer pt-1" style="height: 3rem;">
+                                                        <h6><small>Minority & Language</small></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-sm-6 pt-sm-1">
+                                                <div class="card text-white shadow" style="height: 8rem;">
+                                                    <!-- <div class="card-header">Header</div> -->
+                                                    <div class="card-body my-sm-auto mx-sm-auto">
+                                                        <h3 class="card-title pt-2" id="housing"></h3>
+                                                        <!-- <p class="card-text"></p> -->
+                                                    </div>
+                                                    <div class="card-footer pt-1" style="height: 3rem;">
+                                                        <h6><small>Housing & Transport</small></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-sm-6 pt-sm-1">
+                                                <div class="card text-white shadow" style="height: 8rem;">
+                                                    <!-- <div class="card-header">Header</div> -->
+                                                    <div class="card-body my-sm-auto mx-sm-auto">
+                                                        <h3 class="card-title pt-2" id="summary"></h3>
+                                                        <!-- <p class="card-text"></p> -->
+                                                    </div>
+                                                    <div class="card-footer pt-1" style="height: 3rem;">
+                                                        <h6><small>Summary Ranking</small></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div row style="height: 1rem"></div>
+
+                                <div class="row px-sm-3">
+                                    <div class="card bg-dark px-3 py-2" style="width: 100%; height: 22rem">
+                                        <div class="card-header pt-1 px-1">Expenditure per capita ($)</div>
+
+
+                                        <div class="dataBox row px-sm-">
+
+                                            <div class="col-sm-12 py-sm-2">
+                                                <div class="card text-white shadow" style="height: 5rem;">
+                                                    <!-- <div class="card-header">Header</div> -->
+                                                    <div class="card-body my-sm-auto mx-sm-auto">
+                                                        <!-- <h1 class="card-title display-5" id="exp_info"></h1> -->
+                                                        <p class="card-text" id="exp_info"></p>
+                                                    </div>
+                                                    <div class="card-footer" style="height: 2rem;">
+                                                        <h6 style="font-size: small;" id="county_label_exp"></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-12 py-sm-2">
+                                                <div class="card text-white shadow" style="height: 5rem;">
+                                                    <!-- <div class="card-header">Header</div> -->
+                                                    <div class="card-body my-sm-auto mx-sm-auto">
+                                                        <!-- <h6 class="card-title" id="exp_info"> style="font-size: small;"</h6> -->
+                                                        <p class="card-text" id="ky_exp_avg"></p>
+                                                    </div>
+                                                    <div class="card-footer" style="height: 2rem;">
+                                                        <h6 style="font-size: small;" id="ky_label_exp"></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-12 py-sm-2">
+                                                <div class="card text-white shadow" style="height: 5rem;">
+                                                    <!-- <div class="card-header">Header</div> -->
+                                                    <div class="card-body my-sm-auto mx-sm-auto">
+                                                        <!-- <h1 class="card-title display-5" id="exp_info"></h1> -->
+                                                        <p class="card-text" id="us_exp_avg"></p>
+                                                    </div>
+
+                                                    <div class="card-footer" style="height: 2rem;">
+                                                        <h6 style="font-size: small;" id="us_label_exp"></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--end of scroll container-->
+
+                            <div class="text-dark pl-sm-1" id="note">
+                                <p><sup>*</sup>Please scroll down for expenditure per capita</p>
+                            </div>
+
+                        </div>
+
+                        <div class="tab-pane fade text-dark" id="graph">
+
+                            <div class="data-title row text-white pl-sm-3 pt-sm-4">
+                                <h3 id="county_graph"></h3>
+                            </div>
+
+                            <div class="card border-dark mb-3" style="max-width: 35rem;">
+                                <div class="card-header">Prevalence (2010 - 2017)</div>
+                                <div class="card-body">
+                                    <svg id="chron_graph" width="450" height="275"></svg>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </aside>
+            </section>
+        </div>
+    </div> <!-- end container-fluid -->
+
+
+    <footer class="row bg-dark text-white py-3">
+        <div class="col mx-2">
+            <ul style="line-height: 1.7rem;" list-unstyled">
+                <li>AUTHORED <span id="author">: <a href="https://avyma.github.io/therightvue">THE RIGHT
+                            VUE</a></span>
+                </li>
+                <li>DATE: 06 - 15 - 2020</li>
+                <li><a href="MindMap/Data Source.html">DATA SOURCE</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+    <!-- JQuery JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <!-- JavaScript Plugin -->
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://unpkg.com/topojson@3"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/scrolling-nav.js"></script>
+
+    <script src='js/color-legend.js'></script>
+    <script src='js/app.js'></script>
+
+</body>
+
+</html>
